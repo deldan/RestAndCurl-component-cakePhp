@@ -1,0 +1,16 @@
+Proyecto para cakePhp.
+Componente Para REST
+
+
+pasos de instalaci—n
+
+1.a–adir a los archivos de la carpeta components en app/controller/components de cakePhp.
+2.llamar desde cualquier controllador var $components=array('Curl', 'Restclient');
+3.muestra de llamada a una api externa
+	$uri = "http://api.deldan.com;
+	$params['oauth_token'] = '111999';
+	$params['oauth_token_secret'] = '111999';
+	$params['appToken'] = '111999;
+	$result = $this->Restclient->get($uri, $params, 'xml');
+
+
